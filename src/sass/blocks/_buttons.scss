@@ -1,0 +1,16 @@
+.button {
+    padding: 13px 28px;
+    color: #FFF;
+    font-family: Open Sans;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%; /* 24px */
+    letter-spacing: 0.024px;
+    background-color: $main-color;
+    border-radius: 5px;
+    cursor: pointer;
+    &_promo-consultation {
+        width: 250px;
+        margin: 36px auto 0 auto;
+    }
+}

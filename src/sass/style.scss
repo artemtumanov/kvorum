@@ -1,7 +1,7 @@
 @import 'libs/bootstrap-reboot.min';
 
 * {
-    font-family: sans-serif;
+    font-family: 'Montserrat', sans-serif;
     margin: 0;
     padding: 0;
     h1, h2, h3 {
@@ -17,3 +17,6 @@
 @import 'base/mixins';
 @import 'base/fonts';
 
+@import 'blocks/container';
+@import 'blocks/promo';
+@import 'blocks/buttons';
