@@ -1,5 +1,6 @@
 .promo {
-    padding: 25px 0 300px 0;
+    padding-top: 25px;
+    height: 100vh;
     background: url('../img/background.png') center center/cover no-repeat;
     nav {
         display: flex;
@@ -47,5 +48,9 @@
         font-size: 32px;
         font-weight: 400;
         line-height: 130%; /* 41.6px */
+    }
+    &__burger {
+        display: none;
+        cursor: pointer;
     }
 }

@@ -1,0 +1,12 @@
+.title {
+    color: $main-color;
+    font-family: Montserrat;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 130%; /* 28.6px */
+    letter-spacing: 1.32px;
+    text-transform: uppercase;
+    &_pl80 {
+        padding-left: 80px;
+    }
+}
