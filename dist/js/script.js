@@ -15,3 +15,25 @@ function closeMenu (i) {
 
 closeMenu(closeElem);
 closeMenu(overlay);
+
+const swiper = new Swiper('.services__slider', {
+	// Optional parameters
+	direction: 'horizontal',
+	loop: true,
+	slidesPerView: 3,
+	spaceBetween: 75,
+	centeredSlides: true,
+	centeredSlidesBounds: false,
+	speed: 700,
+  
+	// If we need pagination
+	pagination: {
+	  el: '.swiper-pagination',
+	},
+  
+	// Navigation arrows
+	navigation: {
+	  nextEl: '.swiper-button-next',
+	  prevEl: '.swiper-button-prev',
+	},
+  });

@@ -10,8 +10,13 @@
     border-radius: 5px;
     cursor: pointer;
     text-align: center;
-    &_promo-consultation {
+    &_consultation {
         width: 250px;
         margin: 36px auto 0 auto;
+        &-white {
+            background: #FFFCFC;
+            color: #000;
+            display: none;
+        }
     }
 }
