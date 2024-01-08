@@ -17,23 +17,50 @@ closeMenu(closeElem);
 closeMenu(overlay);
 
 const swiper = new Swiper('.services__slider', {
-	// Optional parameters
 	direction: 'horizontal',
 	loop: true,
-	slidesPerView: 3,
-	spaceBetween: 75,
+	slidesPerView: 1,
 	centeredSlides: true,
 	centeredSlidesBounds: false,
 	speed: 700,
-  
-	// If we need pagination
+	keyboard: {
+		enabled: true,
+	},
+	grabCursor: true,
 	pagination: {
-	  el: '.swiper-pagination',
+		el: '.swiper-pagination',
+		clickable: true,
 	},
-  
-	// Navigation arrows
 	navigation: {
-	  nextEl: '.swiper-button-next',
-	  prevEl: '.swiper-button-prev',
+		nextEl: '.swiper-button-next',
+		prevEl: '.swiper-button-prev',
 	},
+
+	//Media
+	breakpoints: {
+		// when window width is >= 320px
+		320: {
+			navigation: false,
+			pagination: {
+				el: '.swiper-pagination',
+				clickable: false,
+			},
+		},
+		// when window width is >= 769px
+		769: {
+			pagination: {
+				clickable: true,
+			},
+		},
+		// when window width is >= 993px
+		993: {
+			slidesPerView: 2,
+			centeredSlides: false,
+		},
+		1211: {
+			// Optional parameters
+			slidesPerView: 3,
+			spaceBetween: 71,
+		}
+	  }
   });

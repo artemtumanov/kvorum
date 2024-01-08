@@ -1,0 +1,47 @@
+.about {
+    padding: 60px 0 125px 0;
+    &__wrapper {
+        margin-top: 30px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__image {
+        position: relative;
+        &-wrapper {
+            position: relative;
+            width: 512px;
+            height: 685px;
+        }
+        &-main {
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+        &-under {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 491px;
+            height: 653px;
+            background-color: rgba(27, 153, 107, 0.06);
+        }
+    }
+    &__content {
+        width: 614px;
+    }
+    &__header {
+        margin-top: 6px;
+        font-family: Montserrat;
+        font-size: 32px;
+        font-weight: 400;
+        line-height: 130%; /* 41.6px */
+    }
+    &__descr {
+        margin-top: 14px;
+        font-family: Open Sans;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 160%; /* 25.6px */
+        letter-spacing: 0.024px;
+    }
+}

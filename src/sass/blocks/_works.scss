@@ -1,0 +1,101 @@
+.works {
+    background: url('../img/background_how.png') center center/cover no-repeat;
+    padding-top: 60px;
+    padding-bottom: 30px;
+    position: relative;
+    &__tabs {
+        margin-top: 35px;
+        display: flex;
+        position: relative;
+        &-item {
+            font-family: Montserrat;
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 130%; /* 31.2px */
+            margin-right: 32px;
+            cursor: pointer;
+            &_active {
+                text-decoration: underline;
+            }
+        }
+    }
+    &__grid {
+        margin-top: 75px;
+        display: grid;
+        grid-template-columns: repeat(3, 350px);
+        grid-template-rows: repeat(2, minmax(261px, auto));
+        grid-auto-rows: minmax(275px, auto);
+        column-gap: 50px;
+        row-gap: 68px;
+    }
+    &__item {
+        position: relative;
+        &::before {
+            content: '1';
+            color: #FFF;
+            width: 40px;
+            height: 40px;
+            background-color: $main-color;
+            position: absolute;
+            top: -55px;
+            left: 0px;
+            border-radius: 100%;
+            padding: 8px 16px;
+            font-size: 18px;
+            font-family: Oswald;
+            font-weight: 400;
+            line-height: 130%; /* 23.4px */
+        }
+        &:nth-child(2) {
+            &::before {
+                content: '2';
+            }
+        }
+        &:nth-child(3) {
+            &::before {
+                content: '3';
+            }
+        }
+        &:nth-child(6) {
+            &::before {
+                content: '4';
+            }
+        }
+        &:nth-child(5) {
+            &::before {
+                content: '5';
+            }
+        }
+        &:nth-child(4) {
+            &::before {
+                content: '6';
+            }
+        }
+    }
+    &__header {
+        font-family: Montserrat;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 160%; /* 25.6px */
+    }
+    &__descr {
+        font-family: Open Sans;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 160%; /* 25.6px */
+        letter-spacing: 0.024px;
+        margin-top: 10px;
+    }
+    &__line-top {
+        position: absolute;
+        top: 132px;
+        left: 0px;
+        z-index: -1;
+    }
+    &__line-bottom {
+        position: absolute;
+        top: 298px;
+        left: 0px;
+        z-index: -1;
+    }
+}

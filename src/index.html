@@ -179,15 +179,151 @@
                         </div>
                     </div>
                 </div>
-                <!-- If we need pagination -->
-                <!-- <div class="swiper-pagination"></div> -->
+            </div>
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+    <section class="works">
+        <div class="container">
+            <h3 class="title title_center">Как мы работаем</h3>
+            <div class="works__tabs">
+                <div class="works__tabs-item works__tabs-item_active">Покупателям</div>
+                <div class="works__tabs-item">Продавцам</div>
+            </div>
+            <div class="works__grid">
+                <div class="works__item">
+                    <div class="works__header">Найдите себе квартиру </div>
+                    <div class="works__descr">Выберите любые подходящие предложения на известных ресурсах. Оцените варианты по своим критериям и остановитесь на лучшем</div>
+                </div>
+                <div class="works__item">
+                    <div class="works__header">Поручите формальности нам</div>
+                    <div class="works__descr">Сообщите контакты продавца или агента. Мы запросим у них все необходимые документы и проведём юридическую проверку квартиры и её владельца</div>
+                </div>
+                <div class="works__item">
+                    <div class="works__header">Проверим историю владения квартирой</div>
+                    <div class="works__descr">Мы запрашиваем официальные и дополнительные сведения об истории перехода прав на объект, основаниях владения, существующих и снятых ограничениях</div>
+                </div>
+                <div class="works__item">
+                    <div class="works__header">Предоставим рекомендации по проведению сделки</div>
+                    <div class="works__descr">По результатам юридической проверки выдаём правовое заключение о присвоении статуса добросовестного приобретателя, который тоже защищает права покупателя</div>
+                </div>
+                <div class="works__item">
+                    <div class="works__header">Убедимся в порядочности продавца</div>
+                    <div class="works__descr">Чтобы вы не имели дел с судимыми; исключили возникновение претензий к сделке со стороны кредиторов продавца, «забывшего» погасить долги; не рисковали потерять квартиру по суду, который может признать состоявшего на психо- или нарко- диспансерном учёте продавца «не осознававшим своих действий»</div>
+                </div>
+                <div class="works__item">
+                    <div class="works__header">Выясним хронику проживания </div>
+                    <div class="works__descr">Получим архивные сведения о регистрации в квартире по месту жительства, чтобы исключить проблемы с «отказниками»,нарушение прав несовершеннолетних, появление претендентов на «вечное проживание» </div>
+                </div>
+            </div>
+            <img src="icons/how/line_top.png" alt="line-top" class="works__line-top">
+            <img src="icons/how/line_bottom.png" alt="line-bottom" class="works__line-bottom">
+        </div>
+    </section>
+    <section class="about">
+        <div class="container">
+            <h3 class="title title_center title_pl155px">О компании</h3>
+            <div class="about__wrapper">
+                <div class="about__image-wrapper">
+                    <img src="img/about.png" alt="house" class="about__image-main">
+                    <div class="about__image-under"></div>
+                </div>
+                <div class="about__content">
+                    <div class="about__header">Кворум — агентство недвижимости, которому можно доверять!</div>
+                    <div class="about__descr">
+                        Компания работает с 2008 года в городе Королев. Предоставляем услуги по всей России — работаем в online-формате. Наше агентство является сертифицированным, так как входит в Гильдию риелторов Московской области и Российскую Гильдию Риелторов. <br><br>
 
-                <!-- If we need navigation buttons -->
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
+                        Деятельность сертифицированного агентства застрахована. Не все знают, но сделку по покупке квартиры могут признать недействительной, если ее продавец стал банкротом за год до продажи. <br><br>
+
+                        Тогда суд забирает недвижимость, чтобы погасить его долги. <br>
+                        А покупатель остается и без денег, и без квартиры. В нашем агентстве такие ситуации исключены — в любом случае страховая компания возместит ущерб. <br><br>
+
+                        Все сотрудники сертифицированного агентства должны регулярно обучаться и сдавать квалификационные экзамены. Вы можете быть уверены, что с вами будут работать профессионалы. <br><br>
+
+                        Сертифицированное агентство гарантирует предоставление качественных услуг. И несет ответственность за каждую сделку, в отличие от несертифицированных организаций.
+                    </div>
+                </div>
             </div>
         </div>
     </section>
+
+    <div class="consultation">
+        <div class="container">
+            <div class="consultation__wrapper">
+                <div class="consultation__descr">
+                    <div class="consultation__header">Перезвоним Вам в течение <span>30</span> минут!</div>
+                    <div class="consultation__subheader">Консультация бесплатно</div>
+                </div>
+                
+                <form action="#" class="consultation__form">
+                    <div class="consultation__input">
+                        <input name="name" type="text" required placeholder="Имя">
+                    </div>
+                    <div class="consultation__input">
+                        <input type="tel" name="phone" pattern="^\+7[1-9]{10}$" required placeholder="Телефон">
+                    </div>
+                    <div class="consultation__input">
+                        <input name="email" type="email" placeholder="E-mail">
+                    </div>
+                    <div class="consultation__policy">
+                        <input name="checkbox" type="checkbox" required id="checkbox">
+                        <label for="checkbox"></label>
+                        <span>Согласен на обработку персональных данных</span>
+                    </div>
+                    <button class="button consultation__button">Получить консультацию</button>
+                </form>
+                
+            </div>
+        </div>
+    </div>
+    <div class="contacts">
+        <div class="container">
+            <div class="contacts__content">
+                <address class="contacts__block">
+                    <div class="contacts__header">Адрес:</div>
+                    <div class="contacts__descr"><span>МО, г. Королев, пр. Королева 5Д</span></div>
+                </address>
+                <div class="contacts__block">
+                    <div class="contacts__header">Телефон:</div>
+                    <a href="#" class="contacts__descr">+7 (926) 535-99-08</a>
+                </div>
+                <div class="contacts__block">
+                    <div class="contacts__header">E-mail:</div>
+                    <div class="contacts__descr">9705646@mail.ru</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__head">
+                <div class="footer__logo"><img src="img/logo.png" alt="logo"></div>
+                <ul class="footer__list">
+                    <li class="footer__link"><a href="#">Главная</a></li>
+                    <li class="footer__link"><a href="#">Услуги</a></li>
+                    <li class="footer__link"><a href="#">О компании</a></li>
+                    <li class="footer__link"><a href="#">Оставить заявку</a></li>
+                    <li class="footer__link"><a href="#">Контакты</a></li>
+                </ul>
+            </div>
+            <div class="footer__content">
+                <a href="#" class="footer__policy">Политика конфиденциальности</a>
+                <div class="footer__contacts">
+                    <a href="#" class="footer__phone">+7 (926) 535-99-08</a>
+                    <div class="footer__socials">
+                        <a href="" class="footer__social"><img src="icons/socials/whatsup.png" alt="whatsup"></a>
+                        <a href="" class="footer__social"><img src="icons/socials/telegram.png" alt="telegram"></a>
+                        <a href="" class="footer__social"><img src="icons/socials/sber.png" alt="sber"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__company">© 2021 Компания Кворум — Агентство недвижимости</div>
+        </div>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="js/script.js"></script>
 </body>

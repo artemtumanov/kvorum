@@ -1,0 +1,76 @@
+.footer {
+    padding: 67px 0 35px 0;
+    background-color: #F6F5F5;
+    &__head {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__list {
+        margin-top: 27px;
+        list-style-type: none;
+        display: flex;
+        justify-content: space-between;
+        width: 846px;
+    }
+    &__link {
+        a {
+            font-family: Open Sans;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 160%; /* 25.6px */
+            letter-spacing: 0.024px;
+            color: #000;
+            text-decoration: none;
+        }
+    }
+    &__content {
+        margin-top: 45px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__policy {
+        color: #000;
+        font-family: Open Sans;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 150%; /* 21px */
+        letter-spacing: 0.021px;
+        text-decoration-line: underline;
+        align-self: flex-end;
+    }
+    &__contacts {
+        display: flex;
+    }
+    &__phone {
+        color: #000;
+        font-family: Open Sans;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 160%; /* 25.6px */
+        letter-spacing: 0.024px;
+        text-decoration: none;
+        align-self: center;
+    }
+    &__socials {
+        margin-left: 64px;
+        width: 126px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__social {
+        width: 32px;
+        height: 32px;
+        img {
+            width: 100%;
+        }
+    }
+    &__company {
+        margin-top: 57px;
+        color: #000;
+        font-family: Open Sans;
+        font-size: 12px;
+        font-weight: 300;
+        line-height: 150%; /* 18px */
+        letter-spacing: 0.018px;
+    }
+}

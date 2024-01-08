@@ -7,6 +7,7 @@
     visibility: hidden;
     opacity: 0;
     transition: 0.4s ease-in-out;
+    z-index: 20;
     &__active {
         visibility: visible;
         opacity: 1;
@@ -18,7 +19,7 @@
         height: 100vh;
         background-color: #1c7b58;
         padding: 250px 0 0 60px;
-        z-index: 10;
+        z-index: 20;
     }
     &__list {
         list-style-type: none;
