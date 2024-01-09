@@ -64,3 +64,28 @@ const swiper = new Swiper('.services__slider', {
 		}
 	  }
   });
+
+const consultation = document.querySelectorAll('[data-modal]')
+  		modal = document.querySelector('.overlay')
+		modalClose = document.querySelector('.modal__close');
+
+		consultation.forEach(function(i) {
+			i.addEventListener('click', ()=> {
+				// modal.style.display = 'block'
+				modal.classList.add('overlay_active')
+			})
+		});
+
+		modalClose.addEventListener('click', () => {
+			// modal.style.display = 'none';
+			modal.classList.remove('overlay_active')
+		});
+
+const menuList = document.querySelectorAll('.menu__list li');
+
+console.log(menuList)
+		menuList.forEach(function(i) {
+			i.addEventListener('click', () => {
+				menu.classList.remove('menu__active')
+			})
+		})

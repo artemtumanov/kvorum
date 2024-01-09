@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kvorum</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
@@ -17,10 +17,10 @@
             </div>
             <ul class="menu__list">
                 <li><a href="#">Главная</a></li>
-                <li><a href="#">Услуги</a></li>
-                <li><a href="#">О компании</a></li>
-                <li><a href="#">Оставить заявку</a></li>
-                <li><a href="#">Контакты</a></li>
+                <li><a href="#advantages">Услуги</a></li>
+                <li><a href="#about">О компании</a></li>
+                <li data-modal><a href="#">Оставить заявку</a></li>
+                <li><a href="#contacts">Контакты</a></li>
             </ul>
         </div>
         <div class="menu__overlay"></div>
@@ -40,12 +40,12 @@
                 </div>
                 <ul class="promo__list">
                     <li><a href="#">Главная</a></li>
-                    <li><a href="#">Услуги</a></li>
-                    <li><a href="#">О компании</a></li>
-                    <li><a href="#">Оставить заявку</a></li>
-                    <li><a href="#">Контакты</a></li>
+                    <li><a href="#advantages">Услуги</a></li>
+                    <li><a href="#about">О компании</a></li>
+                    <li data-modal><a href="#">Оставить заявку</a></li>
+                    <li><a href="#contacts">Контакты</a></li>
                 </ul>
-                <div class="button">Обратный звонок</div>
+                <div data-modal class="button">Обратный звонок</div>
             </nav>
             <h1>
                 Поможем безопасно продать или купить квартиру в срок от <span>28</span> дней
@@ -53,10 +53,10 @@
             <h2>
                 Полный комплекс риелторских услуг по Москве и Московской области
             </h2>
-            <div class="button button_consultation">Получить консультацию</div>
+            <div data-modal class="button button_consultation">Получить консультацию</div>
         </div>
     </div>
-    <div class="advantages">
+    <div class="advantages" id="advantages">
         <div class="container">
             <div class="advantages__wrapper">
                 <div class="advantages__column">
@@ -133,7 +133,7 @@
                             </div>
                             <div class="services__card-header">Аренда</div>
                             <div class="services__card-descr">Мы оценим квартиру, разместим рекламу и найдем надежного нанимателя. Проведем показ и переговоры, составим договор и акт приема-передачи. Организуем взаиморасчеты.</div>
-                            <div class="button button_consultation button_consultation-white">Получить консультацию</div>
+                            <div data-modal class="button button_consultation button_consultation-white">Получить консультацию</div>
                         </div>
                     </div>
                     <div class="services__slide swiper-slide swiper-slide">
@@ -147,7 +147,7 @@
                             </div>
                             <div class="services__card-header">Ипотека</div>
                             <div class="services__card-descr">Поможем получить ипотечный кредит на выгодных условиях в банках-партнерах. Беремся за сложные случаи — отсутствие средств на первоначальный взнос, плохая кредитная история, без справок о доходах и официального трудоустройства.</div>
-                            <div class="button button_consultation button_consultation-white">Получить консультацию</div>
+                            <div data-modal class="button button_consultation button_consultation-white">Получить консультацию</div>
                         </div>
                     </div>
                     <div class="services__slide swiper-slide">
@@ -161,7 +161,7 @@
                             </div>
                             <div class="services__card-header">Юридическое сопровождение готовых сделок</div>
                             <div class="services__card-descr">Проведем переговоры, проверим юридическую чистоту объекта и участников, подготовим договор,  организуем сделку.</div>
-                            <div class="button button_consultation button_consultation-white">Получить консультацию</div>
+                            <div data-modal class="button button_consultation button_consultation-white">Получить консультацию</div>
                         </div>
                     </div>
                     <div class="services__slide swiper-slide">
@@ -175,7 +175,7 @@
                             </div>
                             <div class="services__card-header">Ипотека</div>
                             <div class="services__card-descr">Поможем получить ипотечный кредит на выгодных условиях в банках-партнерах. Беремся за сложные случаи — отсутствие средств на первоначальный взнос, плохая кредитная история, без справок о доходах и официального трудоустройства.</div>
-                            <div class="button button_consultation button_consultation-white">Получить консультацию</div>
+                            <div data-modal class="button button_consultation button_consultation-white">Получить консультацию</div>
                         </div>
                     </div>
                 </div>
@@ -224,7 +224,7 @@
             <img src="icons/how/line_bottom.png" alt="line-bottom" class="works__line-bottom">
         </div>
     </section>
-    <section class="about">
+    <section class="about" id="about">
         <div class="container">
             <h3 class="title title_center title_pl155px">О компании</h3>
             <div class="about__wrapper">
@@ -280,16 +280,16 @@
             </div>
         </div>
     </div>
-    <div class="contacts">
+    <div class="contacts" id="contacts">
         <div class="container">
             <div class="contacts__content">
                 <address class="contacts__block">
                     <div class="contacts__header">Адрес:</div>
-                    <div class="contacts__descr"><span>МО, г. Королев, пр. Королева 5Д</span></div>
+                    <a target="_blank" href="https://www.google.com/maps/place/%D0%BF%D1%80-%D1%82.+%D0%9A%D0%BE%D1%80%D0%BE%D0%BB%D0%B5%D0%B2%D0%B0,+5%D0%B4,+%D0%9A%D0%BE%D1%80%D0%BE%D0%BB%D1%91%D0%B2,+%D0%9C%D0%BE%D1%81%D0%BA%D0%BE%D0%B2%D1%81%D0%BA%D0%B0%D1%8F+%D0%BE%D0%B1%D0%BB.,+141078/@55.9216753,37.8414806,17z/data=!4m6!3m5!1s0x46b52df6283f0949:0x28657eac778b5824!8m2!3d55.9218016!4d37.8432187!16s%2Fg%2F11c2g6vm8j?entry=ttu" class="contacts__descr"><span>МО, г. Королев, пр. Королева 5Д</span></ф>
                 </address>
                 <div class="contacts__block">
                     <div class="contacts__header">Телефон:</div>
-                    <a href="#" class="contacts__descr">+7 (926) 535-99-08</a>
+                    <a href="tel:+79265359908" class="contacts__descr">+7 (926) 535-99-08</a>
                 </div>
                 <div class="contacts__block">
                     <div class="contacts__header">E-mail:</div>
@@ -304,16 +304,16 @@
                 <div class="footer__logo"><img src="img/logo.png" alt="logo"></div>
                 <ul class="footer__list">
                     <li class="footer__link"><a href="#">Главная</a></li>
-                    <li class="footer__link"><a href="#">Услуги</a></li>
-                    <li class="footer__link"><a href="#">О компании</a></li>
-                    <li class="footer__link"><a href="#">Оставить заявку</a></li>
-                    <li class="footer__link"><a href="#">Контакты</a></li>
+                    <li class="footer__link"><a href="#advantages">Услуги</a></li>
+                    <li class="footer__link"><a href="#about">О компании</a></li>
+                    <li data-modal class="footer__link"><a href="#contacts">Оставить заявку</a></li>
+                    <li class="footer__link"><a href="#contacts">Контакты</a></li>
                 </ul>
             </div>
             <div class="footer__content">
                 <a href="#" class="footer__policy">Политика конфиденциальности</a>
                 <div class="footer__contacts">
-                    <a href="#" class="footer__phone">+7 (926) 535-99-08</a>
+                    <a href="tel:+79265359908" class="footer__phone">+7 (926) 535-99-08</a>
                     <div class="footer__socials">
                         <a href="" class="footer__social"><img src="icons/socials/whatsup.png" alt="whatsup"></a>
                         <a href="" class="footer__social"><img src="icons/socials/telegram.png" alt="telegram"></a>
@@ -324,6 +324,24 @@
             <div class="footer__company">© 2021 Компания Кворум — Агентство недвижимости</div>
         </div>
     </footer>
+
+    <div class="overlay">
+        <div class="modal">
+            <div class="modal__close">&times;</div>
+            <form action="#" class="modal__form">
+                <div class="modal__input">
+                    <input name="name" type="text" required placeholder="Ваше имя">
+                </div>
+                <div class="modal__input">
+                    <input type="tel" name="phone" pattern="^\+7[1-9]{10}$" required placeholder="Ваш телефон">
+                </div>
+                <div class="modal__input">
+                    <textarea name="textarea" id="textarea" placeholder="Ваш вопрос"></textarea>
+                </div>
+                <button class="button modal__button">Отправить</button>
+            </form>
+        </div>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="js/script.js"></script>
 </body>
